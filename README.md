@@ -42,6 +42,6 @@ Doing these will make it a better repository.
   - [ ] Setting -> Option -> Automatically delete head branches. / true.  
     By not leaving any branches after the work is done, you can do a clean job.
   - [ ] Setting -> Branch protection rules. / Setup into main.  
-    - [ ]Require status checks to pass before merging. & Require branches to be up to date before merging.
+    - [ ] Require status checks to pass before merging. & Require branches to be up to date before merging.
     - [ ] Require conversation resolution before merging.
     - [ ] Include administrators.
