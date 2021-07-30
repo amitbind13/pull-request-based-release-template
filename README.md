@@ -7,6 +7,9 @@ It was created as a sample repository for the following:
 - [slime-hatena/lerna-changelog-action](https://github.com/slime-hatena/lerna-changelog-action)
 - [slime-hatena/semantic-versioning-calculator-action](https://github.com/slime-hatena/semantic-versioning-calculator-action)
 
+The license of slime-hatena/pull-request-based-release-template is CC0.  
+(If you include the Licence file in this repository, it will also be copied to the repository where you applied the template...)
+
 ## About the repository
 
 Automatically do the following:
