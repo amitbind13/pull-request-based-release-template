@@ -21,7 +21,7 @@ Automatically do the following:
 
 This is a git-flow that exclude release branch.
 
-**When merging pull requests, do not use "Rebase and merge". This is a restriction of the lerna-changelog.**
+**When merging pull requests, do not use "Squash and merge" and "Rebase and merge". This is a restriction of the lerna-changelog.**
 
 ## How to use
 
@@ -47,6 +47,9 @@ The following tasks are useful to understand easily.
 - [ ] To customize the label, edit `.github/labels.json`. To apply the changes, run the `Label maintenance Action` manually.
 - [ ] Create a `dependabot.yml` if necessary. You may want to add the following settings: labels: 'Type: Maintenance', target-branch: "develop".
 - [ ] The following settings can be added to ensure safe operation.
+  - [ ] Setting -> Option -> Allow merge commits. / true.
+  - [ ] Setting -> Option -> Allow squash merging. / false.
+  - [ ] Setting -> Option -> Allow rebase merging. / false.
   - [ ] Setting -> Option -> Automatically delete head branches. / true.
   - [ ] Setting -> Branch protection rules. / Setup into main.
     - [ ] Require status checks to pass before merging.
