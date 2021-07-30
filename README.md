@@ -21,6 +21,8 @@ Automatically do the following:
 
 This is a git-flow that exclude release branch.
 
+**When merging pull requests, do not use "Rebase and merge". This is a restriction of the lerna-changelog.**
+
 ## How to use
 
 1. Create a feature branch, a bug fix branch, etc, from the main branch.  
