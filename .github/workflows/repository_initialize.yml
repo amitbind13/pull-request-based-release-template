@@ -15,13 +15,13 @@ jobs:
         run: yarn global add @azu/github-label-setup
       - name: Run github-label-setup
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.token }}
         run: |
-          `yarn global bin`/github-label-setup --token ${GITHUB_TOKEN} --labels ${GITHUB_WORKSPACE}/.github/labels.json
+          `yarn global bin`/github-label-setup --token ${token} --labels ${GITHUB_WORKSPACE}/.github/labels.json
       - name: 'Set git config'
         run: |
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
+          git config --local user.email "amitkumarbind130207@gmail.com"
+          git config --local user.name "amitbind13"
       - name: 'Create or Switch develop branch'
         run: |
           git fetch
@@ -48,4 +48,4 @@ jobs:
           pr_label: "Release"
           pr_draft: true
           pr_allow_empty: true
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.token }}
