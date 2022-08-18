@@ -14,6 +14,6 @@ jobs:
         run: yarn global add @azu/github-label-setup
       - name: Run github-label-setup
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.token }}
         run: |
           `yarn global bin`/github-label-setup --token ${GITHUB_TOKEN} --labels ${GITHUB_WORKSPACE}/.github/labels.json
