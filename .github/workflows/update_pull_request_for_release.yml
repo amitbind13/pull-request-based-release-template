@@ -37,7 +37,7 @@ jobs:
         uses: "slime-hatena/lerna-changelog-action@main"
         id: changelog
         with:
-          GITHUB_AUTH: '${{ secrets.GITHUB_TOKEN }}'
+          GITHUB_AUTH: '${{ secrets.token }}'
           tag_from: '${{ steps.check-latest.outputs.from }}'
           tag_to: 'origin/develop'
       - name: Judge the next version
@@ -71,4 +71,4 @@ jobs:
         uses: riskledger/update-pr-description@v2
         with:
           body: "This is a pull request for the next release.\nIf you approve it, the release will be created.\nPlease merge your changes into this branch.\n\n**Do not attach anything other than a release tag to this request.\nUnexpected versions and content may be released.**\n\n### Next version\n\nNext version: `${{ steps.calc.outputs.version }}`\nAutomatically set based on the contents of the release notes.\n\n### Release note\n\nGenerated range: `${{ steps.check-latest.outputs.from }}...origin/develop`\n\n```md\n${{steps.changelog.outputs.markdown}}\n```"
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.token }}
